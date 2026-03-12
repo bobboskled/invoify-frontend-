@@ -31,11 +31,11 @@ const EditIcon   = <><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2
 const SendIcon   = <><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></>;
 const CheckIcon  = <><polyline points="20 6 9 17 4 12"/></>;
 
-const Svg = memo(({ d, size=16 }) => (
+const Svg = ({ size = 16, d }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
     {typeof d==="string"?<path d={d}/>:d}
   </svg>
-));
+);
 
 // ── New/Edit Invoice Modal ─────────────────────────────
 const InvoiceModal = memo(({ invoice, clients, onClose, onSave }) => {

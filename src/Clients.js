@@ -9,11 +9,11 @@ const COLORS = ["#0D3D2E","#1A5C44","#C9A84C","#1A6FA8","#8B5CF6","#E74C3C","#F3
 const getColor = (name = "") => COLORS[name.charCodeAt(0) % COLORS.length];
 
 // ── Icons ─────────────────────────────────────────────
-const Ico = memo(({ d, size = 16 }) => (
+const Ico = ({ size = 16, d }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
     {typeof d === "string" ? <path d={d}/> : d}
   </svg>
-));
+);
 
 const SearchIcon = <><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></>;
 const PlusIcon   = <><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></>;

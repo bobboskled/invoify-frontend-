@@ -370,9 +370,9 @@ export default function Signup({ onGoToLogin }) {
                       style={{ width: "16px", height: "16px", accentColor: "#1A6FA8", cursor: "pointer", marginTop: "2px", flexShrink: 0 }}
                     />
                     I agree to the{" "}
-                    <a href="#" style={{ color: "#1A6FA8", fontWeight: "600", textDecoration: "none" }}>Terms of Service</a>
+                    <button type="button" style={{ color: "#1A6FA8", fontWeight: "600", textDecoration: "none", background:"none", border:"none", cursor:"pointer", fontFamily:"inherit", fontSize:"inherit", padding:0 }}>Terms of Service</button>
                     {" "}and{" "}
-                    <a href="#" style={{ color: "#1A6FA8", fontWeight: "600", textDecoration: "none" }}>Privacy Policy</a>
+                    <button type="button" style={{ color: "#1A6FA8", fontWeight: "600", textDecoration: "none", background:"none", border:"none", cursor:"pointer", fontFamily:"inherit", fontSize:"inherit", padding:0 }}>Privacy Policy</button>
                   </label>
                   {errors.terms && <p role="alert" style={{ fontSize: "12px", color: "#C0392B", marginTop: "4px", fontFamily: "system-ui, sans-serif" }}>⚠ {errors.terms}</p>}
                 </div>
