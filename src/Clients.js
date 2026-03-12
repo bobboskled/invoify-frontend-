@@ -9,6 +9,7 @@ const COLORS = ["#0D3D2E","#1A5C44","#C9A84C","#1A6FA8","#8B5CF6","#E74C3C","#F3
 const getColor = (name = "") => COLORS[name.charCodeAt(0) % COLORS.length];
 
 // ── Icons ─────────────────────────────────────────────
+// eslint-disable-next-line no-unused-vars
 const Ico = ({ size = 16, d }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
     {typeof d === "string" ? <path d={d}/> : d}
@@ -357,3 +358,4 @@ export default function Clients() {
     </>
   );
 }
+
